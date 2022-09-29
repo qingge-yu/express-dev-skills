@@ -7,7 +7,7 @@ module.exports = {
     create,
     delete: deleteTodo,
     edit,
-    update
+    update,
 }
 
 function index(req, res) {

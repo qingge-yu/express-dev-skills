@@ -3,6 +3,156 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  color: grey;
+}
+
+.link-to-skills {
+  text-decoration: none;
+  color: pink;
+  font-size: 2em;
+  margin-top: 70px;
+  border: 2px solid pink;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+.link-to-skills:hover {
+  color: grey;
+  text-decoration: underline;
+  border: 2px solid grey;
+}
+
+.skills-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.skills h1 {
+  color: orange;
+  font-size: 3em;
+}
+
+.skills-page ul {
+  font-size: 1.5em;
+  list-style: none;
+}
+
+.skills-page ul li {
+  margin: 10px;
+  color: grey;
+}
+
+.skills-page a {
+  text-decoration: none;
+  color: orange;
+}
+
+.skills-page a:hover {
+  text-decoration: underline;
+  color: rgb(162, 54, 54);
+}
+
+.add-new-skill {
+  text-decoration: none;
+  border: 2px solid grey;
+  color: grey;
+  border-radius: 15px;
+  padding: 15px;
+  margin-top: 50px;
+  font-weight: 700;
+}
+
+.add-new-skill:hover {
+  text-decoration: underline;
+}
+
+.edit-skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.edit-skills h1 {
+  color: grey;
+}
+
+.edit-skills form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+
+.edit-skills form input {
+  border: 2px solid rgb(162, 54, 54);
+}
+
+.edit-skills form button {
+  margin-top: 15px;
+  font-size: 1.3em;
+  background: none;
+  border: 2px solid rgb(162, 54, 54);
+  border-radius: 10px;
+  color: rgb(162, 54, 54);
+}
+
+.edit-skills form button:hover {
+  background: rgb(162, 54, 54);
+  color: white;
+}
+
+.show-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.show-page h3 {
+  font-size: 1.5em;
+  color: grey;
+}
+
+.show-page a {
+  margin-top: 30px;
+  text-decoration: none;
+  font-size: 1.3em;
+  border: 2px solid rgb(162, 54, 54);
+  padding: 12px;
+  border-radius: 20px;
+  color: rgb(162, 54, 54);
+}
+
+.show-page a:hover {
+  color: white;
+  background-color: rgb(162, 54, 54);
+}
+
+.show-page button {
+  margin-top: 30px;
+  background: none;
+  font-size: 1.3em;
+  border: 2px solid rgb(162, 54, 54);
+  padding: 12px;
+  border-radius: 20px;
+  color: rgb(162, 54, 54);
+}
+
+.show-page button:hover {
+  color: white;
+  background-color: rgb(162, 54, 54);
 }

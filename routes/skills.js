@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 const skillsCtrl = require('../controllers/skills')
+const pageCtrl = require('../controllers/home')
 
 // All actual paths start with "/skills"
 
@@ -11,5 +12,8 @@ router.post('/', skillsCtrl.create)
 router.delete('/:id', skillsCtrl.delete)
 router.get('/:id/edit', skillsCtrl.edit)
 router.put('/:id', skillsCtrl.update)
+
+
+router.get('/', pageCtrl.toSkillsPage)
 
 module.exports = router;

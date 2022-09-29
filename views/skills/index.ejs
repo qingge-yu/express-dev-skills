@@ -10,19 +10,21 @@
 </head>
 
 <body>
-    <h1>My Skills</h1>
-    <ul>
-        <% skills.forEach(function(s) { %>
-            <li>
-                <a href="/skills/<%=s.id%>">
-                    <%= s.skill %>
-                </a>
-                -
-                <%= s.learning ? 'learning' : 'not learned' %>
-            </li>
-            <% }) %>
-    </ul>
-    <a href="/skills/new">Add new skill</a>
+    <div class="skills-page">
+        <h1>My Skills</h1>
+        <ul>
+            <% skills.forEach(function(s) { %>
+                <li>
+                    <a href="/skills/<%=s.id%>">
+                        <%= s.skill %>
+                    </a>
+                    -
+                    <%= s.learning ? 'learning' : 'not learned' %>
+                </li>
+                <% }) %>
+        </ul>
+        <a href="/skills/new" class="add-new-skill">Add new skill</a>
+    </div>
 </body>
 
 </html>
