@@ -1,7 +1,7 @@
 module.exports = {
-    toSkillsPage
+    index
 }
 
-function toSkillsPage(req, res) {
-    res.redirect('skills')
+function index(req, res) {
+    res.redirect('skills/index')
 }

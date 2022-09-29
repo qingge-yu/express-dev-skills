@@ -1,22 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Express Dev Skills</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-</head>
-
-<body>
+<%- include('../partials/header') %>
     <div class="edit-skills">
         <h1>Edit new skill</h1>
         <form action="/skills/<%= skill.id %>?_method=PUT" method="POST" autocomplete="off">
             <input type="text" name="skill" value="<%= skill.skill %>">
+            <label>Learned</label>
+            <input type="checkbox" <%=skill.learned ? 'checked' : '' %> name="learned">
             <button type="submit">Confirm</button>
         </form>
     </div>
-</body>
-
-</html>
+    <%- include('../partials/footer') %>

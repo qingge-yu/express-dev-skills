@@ -1,10 +1,10 @@
 const skills = [
-    { id: 12321, skill: 'HTML', learning: true },
-    { id: 23432, skill: 'CSS', learning: true },
-    { id: 34543, skill: 'NodeJS', learning: true },
-    { id: 45654, skill: 'ExpressJS', learning: true },
-    { id: 56765, skill: 'SQL', learning: false },
-    { id: 67876, skill: 'React', learning: false }
+    { id: 12321, skill: 'HTML', learned: true },
+    { id: 23432, skill: 'CSS', learned: true },
+    { id: 34543, skill: 'NodeJS', learned: true },
+    { id: 45654, skill: 'ExpressJS', learned: true },
+    { id: 56765, skill: 'SQL', learned: false },
+    { id: 67876, skill: 'React', learned: false }
 ]
 
 module.exports = {
@@ -26,7 +26,7 @@ function getOne(id) {
 
 function create(skill) {
     skill.id = Date.now() % 100000
-    skill.learning = false
+    skill.learned = false
     skills.push(skill)
 }
 
@@ -36,7 +36,8 @@ function deleteOne(id) {
     skills.splice(idx, 1)
 }
 
-function updateOne(id, skill) {
+function updateOne(id, data) {
     skillToUpdate = getOne(id)
-    skillToUpdate.skill = skill
+    skillToUpdate.skill = data.skill
+    skillToUpdate.learned = !!data.learned
 }

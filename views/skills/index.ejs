@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Express Dev Skills</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-</head>
-
-<body>
+<%- include('../partials/header') %>
     <div class="skills-page">
         <h1>My Skills</h1>
         <ul>
@@ -19,12 +8,11 @@
                         <%= s.skill %>
                     </a>
                     -
-                    <%= s.learning ? 'learning' : 'not learned' %>
+                    <%= s.learned ? 'learned' : 'not learned' %>
                 </li>
                 <% }) %>
         </ul>
         <a href="/skills/new" class="add-new-skill">Add New Skill</a>
+        <a href="/" method="GET" class="link-to-home">Home</a>
     </div>
-</body>
-
-</html>
+    <%- include('../partials/footer') %>
