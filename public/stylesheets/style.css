@@ -15,18 +15,18 @@ body {
 
 .link-to-skills {
   text-decoration: none;
-  color: pink;
+  color: orange;
   font-size: 2em;
   margin-top: 70px;
-  border: 2px solid pink;
+  border: 2px solid orange;
   padding: 15px;
   border-radius: 20px;
 }
 
 .link-to-skills:hover {
-  color: grey;
+  color: rgb(162, 54, 54);
   text-decoration: underline;
-  border: 2px solid grey;
+  border: 2px solid rgb(162, 54, 54);
 }
 
 .skills-page {
@@ -37,7 +37,7 @@ body {
   margin-top: 80px;
 }
 
-.skills h1 {
+.skills-page h1 {
   color: orange;
   font-size: 3em;
 }
@@ -143,6 +143,7 @@ body {
 }
 
 .show-page button {
+  align-self: auto;
   margin-top: 30px;
   background: none;
   font-size: 1.3em;
