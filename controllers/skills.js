@@ -12,18 +12,23 @@ module.exports = {
 
 function index(req, res) {
     res.render('skills/index', {
-        skills: Skill.getAll()
+        skills: Skill.getAll(),
+        title: 'My Skills'
     })
 }
 
 function show(req, res) {
+    const skill = Skill.getOne(req.params.id)
     res.render('skills/show', {
-        skill: Skill.getOne(req.params.id)
+        skill,
+        title: `${skill.skill} Skill`
     })
 }
 
 function newTodo(req, res) {
-    res.render('skills/new')
+    res.render('skills/new', {
+        title: 'Add New Skill'
+    })
 }
 
 function create(req, res) {
@@ -38,7 +43,8 @@ function deleteTodo(req, res) {
 
 function edit(req, res) {
     res.render('skills/edit', {
-        skill: Skill.getOne(req.params.id)
+        skill: Skill.getOne(req.params.id),
+        title: 'Edit Skill'
     })
 }
 
